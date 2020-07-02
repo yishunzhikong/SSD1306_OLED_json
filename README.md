@@ -11,5 +11,5 @@
 
 ---
 # 鸣谢
-json解析库cJSON来源:[DaveGamble/cJSON](https://github.com/DaveGamble/cJSON)
-SSD1306驱动文件来源:[SSD1306-OLED-display-driver-for-BeagleBone](https://github.com/deeplyembeddedWP/SSD1306-OLED-display-driver-for-BeagleBone)
+## json解析库cJSON来源:[DaveGamble/cJSON](https://github.com/DaveGamble/cJSON)
+## SSD1306驱动文件来源:[SSD1306-OLED-display-driver-for-BeagleBone](https://github.com/deeplyembeddedWP/SSD1306-OLED-display-driver-for-BeagleBone)
