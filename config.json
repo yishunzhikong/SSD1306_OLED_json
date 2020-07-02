@@ -1,0 +1,89 @@
+{
+	"seting":{
+		"pixel":12832,
+		"dev":"/dev/i2c-0",
+		"addr":60
+	},
+	"draw1":{
+		"seting":{
+			"cycle":5,"time":20,"page":1,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"r_rect","x0":2,"y0":2,"w":124,"h":24,"r":12,"fill":0,"color":1,"en":1},
+			{"type":"rect","x0":10,"y0":4,"w":108,"h":20,"fill":0,"color":1,"en":1},
+			{"type":"str","data":"Rectangle and","x0":12,"y0":7,"size":1,"color":1,"en":1},
+			{"type":"str","data":"rounded rectangle","x0":12,"y0":15,"size":1,"color":1,"en":1}
+		]
+	},
+	"draw2":{
+		"seting":{
+			"cycle":5,"time":20,"page":2,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"line","x0":0,"y0":4,"x1":127,"y1":4,"color":1,"en":1},
+			{"type":"line","x0":0,"y0":8,"x1":127,"y1":8,"color":1,"en":1},
+			{"type":"pixel","x0":16,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":32,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":48,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":64,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":80,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":96,"y0":12,"color":1,"en":1},
+			{"type":"pixel","x0":112,"y0":12,"color":1,"en":1},
+			{"type":"str","data":"line and pixel","x0":16,"y0":16,"size":1,"color":1,"en":1}
+		]
+	},
+	"draw3":{
+		"seting":{
+			"cycle":5,"time":20,"page":4,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"circle","x0":104,"y0":16,"r":14,"fill":0,"color":1,"en":1},
+			{"type":"trle","x0":104,"y0":2,"x1":94,"y1":24,"x2":114,"y2":24,"fill":0,"color":1,"en":1},
+			{"type":"str","data":"circle and","x0":7,"y0":7,"size":1,"color":1,"en":1},
+			{"type":"str","data":"Triangle","x0":7,"y0":15,"size":1,"color":1,"en":1}
+		]
+	},
+	"str":{
+		"seting":{
+			"cycle":5,"time":20,"page":3,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"str","data":"Integer:","x0":7,"y0":0,"size":1,"color":1,"en":1},
+			{"type":"num","func":"ui","data":543,"base":3,"x0":56,"y0":0,"size":1,"color":1,"en":1},
+			{"type":"str","data":"Double:","x0":7,"y0":8,"size":1,"color":1,"en":1},
+			{"type":"num","func":"fl","data":123.45,"base":6,"x0":48,"y0":8,"size":1,"color":1,"en":1},
+			{"type":"str","data":"String:","x0":7,"y0":16,"size":1,"color":1,"en":1},
+			{"type":"str","data":"string","x0":48,"y0":16,"size":1,"color":1,"en":1}
+		]
+	},
+	"cmd":{
+		"seting":{
+			"cycle":5,"time":20,"page":5,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"str","data":"shell:","x0":8,"y0":8,"size":1,"color":1,"en":1},
+			{"type":"cmd","data":"ifconfig br-lan|grep 'inet addr:'|cut -d: -f2|awk '{print $1}'","x0":46,"y0":8,"base":15,"size":1,"color":1,"en":1},
+			{"type":"str","data":"Scrolling effect","x0":16,"y0":20,"size":1,"color":1,"en":1}
+		]
+	},
+	"base":{
+		"seting":{
+			"cycle":5,"time":20,"page":6,"scroll":1,"scrollstart":0,"scrollstop":15
+		},
+		"display":[
+			{"type":"str","data":"date:","x0":8,"y0":0,"size":1,"color":1,"en":1},
+			{"type":"base","func":0,"x0":39,"y0":0,"base":10,"class":"%Y-%m-%d","size":1,"color":1,"en":1},
+			{"type":"str","data":"temp:","x0":8,"y0":8,"size":1,"color":1,"en":1},
+			{"type":"base","func":1,"x0":39,"y0":8,"base":5,"class":0,"size":1,"color":1,"en":1},
+			{"type":"str","data":"freq:","x0":8,"y0":16,"size":1,"color":1,"en":1},
+			{"type":"base","func":2,"x0":39,"y0":16,"base":5,"class":1,"size":1,"color":1,"en":1},
+			{"type":"str","data":"IP:","x0":8,"y0":24,"size":1,"color":1,"en":1},
+			{"type":"base","func":3,"x0":27,"y0":24,"port":"eth1","base":15,"size":1,"color":1,"en":1}
+		]
+	},
+	"blank":{
+		"seting":{
+			"cycle":5,"time":30,"page":7,"scroll":1,"scrollstart":0,"scrollstop":15
+		}
+	}
+}
