@@ -26,7 +26,7 @@
 ./ssd -c /xxx/config.json
 ```
 
-<h2 id="json简介">json简介</h2>  
+<h2 id="json简介">json简介</h2>
 
 * JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式  
 * 其主要元素为`健`、`值`、`符号`  
