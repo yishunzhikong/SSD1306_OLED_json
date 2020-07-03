@@ -271,7 +271,7 @@
 <h3 id="shell命令返回值">10. shell命令返回值</h3>  
 
 ```
-{"type":"cmd", "data":"ifconfig br-lan|grep 'inet addr:'|cut -d: -f2|awk '{print $1}'", "x0":0, "y0":0, "base":0, "size":0, "color":0, "en":0}
+{"type":"cmd", "data":"ifconfig", "x0":0, "y0":0, "base":0, "size":0, "color":0, "en":0}
 ```
 |键|值类型|取值范围|默认值|说明|
 |:----:|:----:|:----:|:----:|:----:|
