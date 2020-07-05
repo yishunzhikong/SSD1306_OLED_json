@@ -39,12 +39,12 @@
 **方法1：**
 将config.json和二进制ssd放入同一目录，终端进入该目录执行
 ```
-./ssd
+./ssd > /dev/null &
 ```
 **方法2**：
 将config.json放入`/xxx`目录，终端进入`ssd`所在目录执行  
 ```
-./ssd -c /xxx/config.json
+./ssd -c /xxx/config.json > /dev/null &
 ```
 
 <h2 id="json简介">json简介</h2>
